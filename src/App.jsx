@@ -7,7 +7,7 @@ import ObjContacts from './ContactList.json';
 
 function App() {
   const savedContacts = JSON.parse(localStorage.getItem('contacts'));
-  const [contacts, setContacts] = useState(savedContacts.length === 0 ? ObjContacts : savedContacts);
+  const [contacts, setContacts] = useState(savedContacts || ObjContacts);
   const [search, setSearch] = useState('');
 
   useEffect(() => {

@@ -1,0 +1,6 @@
+.boxForSeacrh {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 200px;
+}

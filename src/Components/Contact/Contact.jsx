@@ -1,4 +1,4 @@
-import style from '../Contact/Contact.module.css';
+import style from './Contact.module.css';
 
 const Contact = ({list, onClean}) => {
     return (

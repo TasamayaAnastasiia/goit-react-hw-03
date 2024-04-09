@@ -1,7 +1,7 @@
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import { nanoid } from 'nanoid';
 import * as Yup from 'yup';
-import css from '../ContactForm/ContactForm.module.css';
+import css from './ContactForm.module.css';
 
 const ContactForm = ({onAdd}) => {
 

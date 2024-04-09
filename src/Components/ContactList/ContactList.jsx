@@ -1,5 +1,5 @@
 import Contact from '../Contact/Contact.jsx';
-import style from '../ContactList/ContactList.module.css';
+import style from './ContactList.module.css';
 
 const ContactList = ({list, onDelete}) => {
     return (

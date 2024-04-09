@@ -11,8 +11,9 @@ function App() {
   const [search, setSearch] = useState(''); 
 
   useEffect(() => {
-    JSON.parse(localStorage.getItem('contacts')); 
+    JSON.parse(localStorage.getItem('contacts'));  
   })
+  
 
 const handleSearch = (e) => setSearch(e.target.value) 
 const filteredContacts = contacts.filter(contact => contact.name.toLowerCase().includes(search.toLowerCase()));

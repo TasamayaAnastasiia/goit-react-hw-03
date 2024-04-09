@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react';
 import './App.css';
-import SearchBox from './components/SearchBox/SearchBox.jsx';
-import ContactForm from './components/ContactForm/ContactForm.jsx';
-import ContactList from './components/ContactList/ContactList.jsx';
+import SearchBox from '../src/components/SearchBox/SearchBox.jsx';
+import ContactForm from '../src/components/ContactForm/ContactForm.jsx';
+import ContactList from '../src/components/ContactList/ContactList.jsx';
 import ObjContacts from './ContactList.json';
 
 function App() {
@@ -11,7 +11,7 @@ function App() {
   const [search, setSearch] = useState(''); 
 
   useEffect(() => {
-    JSON.parse(localStorage.getItem('contacts'));
+    JSON.parse(localStorage.getItem('contacts')); 
   })
 
 const handleSearch = (e) => setSearch(e.target.value) 
